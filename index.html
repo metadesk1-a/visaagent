@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jesmien Travel Agency in Vavuniya, Sri Lanka. Flight tickets, visa arrangements, travel insurance, hotel bookings and travel document assistance.">
+<meta name="theme-color" content="#101d32">
+<title>Jesmien Travel Agency | Thoughtful Travel, Seamlessly Arranged</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14243a;--navy:#101d32;--navy2:#1a2d49;--gold:#c9a66b;--gold-light:#ead9bb;
+  --cream:#f8f6f1;--white:#fff;--muted:#758092;--line:#e8e5de;--rose:#ed4965;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+.container{width:min(1160px,90%);margin:auto}
+.announcement{background:var(--navy);color:#dce3ed;font-size:11px;letter-spacing:1.2px;text-align:center;padding:8px 12px}
+.announcement span{color:var(--gold-light)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid #e9e6df}
+.navbar{height:82px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px}
+.brand-symbol{height:43px;width:43px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,#247dc0,#102e69);font-size:23px;box-shadow:0 5px 15px #173e722b}
+.brand-name{font-size:17px;line-height:1.1;font-weight:800;letter-spacing:.7px;color:var(--navy)}
+.brand-name span{color:var(--gold)}
+.brand-name small{display:block;font-size:8px;letter-spacing:3px;font-weight:700;color:#8290a1;margin-top:5px}
+nav{display:flex;align-items:center;gap:29px}
+nav a{font-size:12px;font-weight:700;letter-spacing:.5px;color:#445064;transition:.2s}
+nav a:hover{color:#b18b4e}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;background:var(--gold);color:#17263c;border:1px solid var(--gold);font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;transition:.25s}
+.nav-cta:hover,.btn:hover{background:#b48d52;border-color:#b48d52;transform:translateY(-2px)}
+.btn-outline{background:transparent;border-color:#ffffff80;color:#fff}
+.btn-outline:hover{background:#fff;color:var(--navy);border-color:#fff}
+.menu{display:none;border:0;background:none;color:var(--navy);font-size:27px;cursor:pointer}
+.hero{position:relative;overflow:hidden;background:var(--navy);color:white;min-height:680px;display:flex;align-items:center}
+.hero-image{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,23,43,.96) 0%,rgba(9,23,43,.84) 42%,rgba(9,23,43,.24) 100%),url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=90") center/cover}
+.hero:after{content:"";position:absolute;right:-140px;bottom:-310px;width:620px;height:620px;border:1px solid #d0b17b45;border-radius:50%;box-shadow:0 0 0 55px #d0b17b0b,0 0 0 110px #d0b17b08}
+.hero-content{position:relative;z-index:2;padding:105px 0;max-width:730px}
+.kicker{display:inline-flex;align-items:center;gap:12px;color:var(--gold-light);font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+.kicker:before{content:"";width:34px;height:1px;background:var(--gold)}
+.hero h1{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(45px,6.5vw,78px);line-height:1.07;letter-spacing:-1.5px;margin:25px 0}
+.hero h1 em{font-style:normal;color:var(--gold-light)}
+.hero p{max-width:560px;color:#d2d9e2;font-size:15px;line-height:1.9;margin-bottom:31px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+.hero-note{margin-top:55px;padding-top:20px;border-top:1px solid #ffffff35;display:flex;gap:32px;flex-wrap:wrap;color:#d9e0e9;font-size:11px;letter-spacing:.7px}
+.hero-note span{display:flex;align-items:center;gap:8px}
+.hero-note b{color:var(--gold-light);font-size:15px}
+.intro-strip{background:var(--cream);border-bottom:1px solid var(--line)}
+.strip-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 0}
+.strip-item{text-align:center;padding:5px 15px;border-right:1px solid #ded8cd}
+.strip-item:last-child{border:0}
+.strip-item strong{display:block;color:var(--navy);font-size:13px;letter-spacing:.5px}
+.strip-item small{color:var(--muted);font-size:11px}
+.section{padding:100px 0}
+.section-cream{background:var(--cream)}
+.section-head{max-width:650px;margin:0 auto 52px;text-align:center}
+.eyebrow{color:#a78248;font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+.section-head h2,.about-copy h2{font-family:"Playfair Display",serif;font-size:clamp(34px,4.5vw,49px);line-height:1.16;font-weight:500;color:var(--navy);margin:13px 0}
+.section-head p{font-size:14px;color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:76px;align-items:center}
+.about-visual{position:relative;padding:0 35px 35px 0}
+.about-visual img{width:100%;height:480px;object-fit:cover;display:block}
+.about-visual:after{content:"";position:absolute;right:0;bottom:0;width:65%;height:62%;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);z-index:-1}
+.photo-label{position:absolute;left:-15px;bottom:58px;background:var(--navy);color:#fff;padding:17px 22px;min-width:190px}
+.photo-label small{display:block;color:var(--gold-light);font-size:9px;letter-spacing:2px}
+.photo-label strong{font-family:"Playfair Display",serif;font-size:20px;font-weight:500}
+.about-copy h2{margin:12px 0 20px}
+.about-copy p{font-size:14px;color:var(--muted);margin:0 0 15px}
+.about-copy .btn{margin-top:13px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card{background:#fff;border:1px solid var(--line);padding:29px 26px;min-height:205px;transition:.25s;position:relative}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px #1b2e4910;border-color:#d3bd98}
+.service-number{font-size:10px;color:#b18b4e;font-weight:800;letter-spacing:2px}
+.service-icon{font-size:24px;margin:17px 0 10px}
+.service-card h3{font-family:"Playfair Display",serif;font-size:21px;font-weight:600;color:var(--navy);margin-bottom:7px}
+.service-card p{font-size:12px;color:var(--muted);line-height:1.75}
+.service-card:after{content:"";position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--gold);transition:.25s}
+.service-card:hover:after{width:100%}
+.promise{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.promise:before{content:"";position:absolute;width:480px;height:480px;border:1px solid #d0b17b24;border-radius:50%;right:-170px;top:-220px;box-shadow:0 0 0 45px #d0b17b08,0 0 0 90px #d0b17b06}
+.promise .section-head h2{color:#fff}
+.promise .section-head p{color:#b9c4d2}
+.promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;position:relative}
+.promise-item{border-top:1px solid #ffffff35;padding-top:23px}
+.promise-item span{color:var(--gold-light);font-family:"Playfair Display",serif;font-size:30px}
+.promise-item h3{font-size:15px;margin:8px 0;color:#fff}
+.promise-item p{font-size:12px;color:#b9c4d2}
+.cta{background:linear-gradient(110deg,#f8f6f1,#f1eadf);padding:75px 0;text-align:center}
+.cta h2{font-family:"Playfair Display",serif;font-size:clamp(32px,4.5vw,48px);font-weight:500;color:var(--navy)}
+.cta p{color:var(--muted);font-size:14px;margin:12px 0 25px}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:25px}
+.contact-card{background:var(--cream);padding:36px;border:1px solid var(--line)}
+.contact-card h3{font-family:"Playfair Display",serif;color:var(--navy);font-size:26px;font-weight:500;margin-bottom:25px}
+.contact-row{display:flex;gap:15px;margin:22px 0}
+.contact-icon{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;background:var(--navy);color:var(--gold-light);font-size:17px}
+.contact-row h4{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#9b7844;margin-bottom:4px}
+.contact-row p,.contact-row a{font-size:13px;color:#5e6a7b}
+.contact-row a:hover{color:#a78248}
+.contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+.contact-actions .btn-outline-dark{background:transparent;color:var(--navy);border-color:#b9b3a8}
+.map{width:100%;height:100%;min-height:390px;border:0;filter:saturate(.65)}
+.share-area{text-align:center;margin-top:30px}
+.share{background:var(--rose);border-color:var(--rose);color:white;cursor:pointer}
+.share:hover{background:#d93653;border-color:#d93653}
+footer{background:#0a1525;color:#aeb9c8;padding:32px 0;text-align:center;font-size:11px}
+footer strong{color:var(--gold-light);letter-spacing:1px}
+footer .footer-sub{margin-top:6px;color:#77869a}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#20bd68;color:#fff;font-size:25px;z-index:40;box-shadow:0 8px 25px #0003}
+@media(max-width:850px){
+ .menu{display:block}
+ nav{display:none;position:absolute;top:82px;left:0;right:0;background:#fff;padding:24px 5%;box-shadow:0 12px 20px #0001;flex-direction:column;align-items:flex-start;gap:19px}
+ nav.open{display:flex}
+ .hero{min-height:620px}
+ .about-grid,.contact-grid{grid-template-columns:1fr;gap:42px}
+ .about-visual{max-width:620px}
+ .map{min-height:330px}
+}
+@media(max-width:600px){
+ .announcement{font-size:9px}
+ .navbar{height:72px}
+ nav{top:72px}
+ .hero{min-height:590px}
+ .hero-content{padding:78px 0}
+ .hero h1{font-size:47px}
+ .hero p{font-size:14px}
+ .hero-note{gap:13px;margin-top:35px}
+ .strip-grid{grid-template-columns:1fr;gap:13px;padding:18px 0}
+ .strip-item{border:0;border-bottom:1px solid #ded8cd;padding:8px}
+ .strip-item:last-child{border:0}
+ .section{padding:72px 0}
+ .about-visual img{height:340px}
+ .photo-label{left:-7px;bottom:48px}
+ .service-grid{grid-template-columns:1fr}
+ .service-card{min-height:0}
+ .promise-grid{grid-template-columns:1fr;gap:24px}
+ .contact-card{padding:25px 20px}
+ .hero-actions .btn{width:100%}
+}
+</style>
+</head>
+<body>
+<div class="announcement">PERSONAL TRAVEL ASSISTANCE <span>•</span> VAVUNIYA, SRI LANKA</div>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="#home" aria-label="Jesmien Travel Agency home">
+      <div class="brand-symbol">✈</div>
+      <div class="brand-name">JESMIEN <span>TRAVEL</span><small>TRAVEL AGENCY</small></div>
+    </a>
+    <button class="menu" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#contact">CONTACT</a>
+      <a class="nav-cta" href="tel:+94779779261">LET'S TALK&nbsp; ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-image"></div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="kicker">YOUR JOURNEY. OUR EXPERTISE.</span>
+      <h1>Every journey<br>begins with <em>confidence.</em></h1>
+      <p>From flight tickets and visa arrangements to hotel bookings and travel documentation, we bring essential travel assistance together — with personal attention at every step.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Plan Your Journey&nbsp; ↗</a>
+        <a class="btn btn-outline" href="tel:+94779779261">Call 077 977 9261</a>
+      </div>
+      <div class="hero-note">
+        <span><b>✦</b> Travel arrangements</span>
+        <span><b>✦</b> Document assistance</span>
+        <span><b>✦</b> Vavuniya, Sri Lanka</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="intro-strip">
+  <div class="container strip-grid">
+    <div class="strip-item"><strong>TRAVEL SUPPORT</strong><small>Flight tickets & hotel bookings</small></div>
+    <div class="strip-item"><strong>DOCUMENT ASSISTANCE</strong><small>Visa, translation & attestation</small></div>
+    <div class="strip-item"><strong>PERSONAL SERVICE</strong><small>Speak directly with our team</small></div>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-visual">
+      <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1100&q=90" alt="Travel suitcase and travel planning">
+      <div class="photo-label"><small>DISCOVER MORE</small><strong>Travel with ease.</strong></div>
+    </div>
+    <div class="about-copy">
+      <span class="eyebrow">A LITTLE ABOUT US</span>
+      <h2>Thoughtful assistance for the journeys that matter.</h2>
+      <p>At Jesmien Travel Agency, we are proud to offer a range of travel-related services to our valued clients in Vavuniya and beyond.</p>
+      <p>Whether you are preparing for an overseas trip, arranging accommodation or organising important travel documents, our team is here to help you navigate the process.</p>
+      <p>We believe good travel planning starts with clear information, attentive service and support you can reach when you need it.</p>
+      <a class="btn" href="#contact">GET IN TOUCH&nbsp; ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-cream" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">HOW WE CAN HELP</span>
+      <h2>Travel services, thoughtfully arranged.</h2>
+      <p>Explore the services available through Jesmien Travel Agency.</p>
+    </div>
+    <div class="service-grid">
+      <article class="service-card"><span class="service-number">01 / TRAVEL</span><div class="service-icon">✈</div><h3>Flight Tickets</h3><p>Assistance with flight ticket arrangements for your travel plans.</p></article>
+      <article class="service-card"><span class="service-number">02 / DOCUMENTS</span><div class="service-icon">▣</div><h3>Visa Arrangements</h3><p>Guidance and assistance with visa-related arrangements.</p></article>
+      <article class="service-card"><span class="service-number">03 / PROTECTION</span><div class="service-icon">◇</div><h3>Travel Insurance</h3><p>Support with travel insurance arrangements for your journey.</p></article>
+      <article class="service-card"><span class="service-number">04 / STAYS</span><div class="service-icon">⌂</div><h3>Hotel Booking</h3><p>Assistance with finding and arranging hotel accommodation.</p></article>
+      <article class="service-card"><span class="service-number">05 / APPOINTMENTS</span><div class="service-icon">▦</div><h3>Visa Appointments</h3><p>Help with visa appointment arrangements.</p></article>
+      <article class="service-card"><span class="service-number">06 / CERTIFICATES</span><div class="service-icon">▤</div><h3>Police Clearance</h3><p>Assistance with police clearance document processes.</p></article>
+      <article class="service-card"><span class="service-number">07 / LANGUAGE</span><div class="service-icon">文</div><h3>Translations</h3><p>Translation assistance for your required documents.</p></article>
+      <article class="service-card"><span class="service-number">08 / VERIFICATION</span><div class="service-icon">✓</div><h3>Attestations</h3><p>Support with document attestation arrangements.</p></article>
+      <article class="service-card"><span class="service-number">09 / PASSPORTS</span><div class="service-icon">▣</div><h3>Passport Renewal</h3><p>Assistance and guidance for passport renewal procedures.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section promise">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">THE JESMIEN APPROACH</span>
+      <h2>Clear guidance. Personal attention.</h2>
+      <p>We aim to make your arrangements feel simpler from the first conversation.</p>
+    </div>
+    <div class="promise-grid">
+      <div class="promise-item"><span>01</span><h3>Speak with our team</h3><p>Tell us about your travel plans or the documents you need assistance with.</p></div>
+      <div class="promise-item"><span>02</span><h3>Understand your options</h3><p>We help explain the relevant service process and information to prepare.</p></div>
+      <div class="promise-item"><span>03</span><h3>Move forward with clarity</h3><p>Get in touch with us as you work through your travel arrangements.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <span class="eyebrow">YOUR NEXT JOURNEY STARTS HERE</span>
+    <h2>Let’s make your travel plans happen.</h2>
+    <p>Contact Jesmien Travel Agency to discuss your requirements.</p>
+    <a class="btn" href="https://wa.me/94779779261" target="_blank" rel="noopener">CHAT ON WHATSAPP&nbsp; ↗</a>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">WE'RE HERE TO HELP</span>
+      <h2>Get in touch with us.</h2>
+      <p>Visit our office in Vavuniya or contact us by phone.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Jesmien Travel Agency</h3>
+        <div class="contact-row"><div class="contact-icon">⌖</div><div><h4>Office Address</h4><p>No. 95, 1st Floor,<br>Horawupothana Road,<br>Vavuniya, Sri Lanka.</p></div></div>
+        <div class="contact-row"><div class="contact-icon">☎</div><div><h4>Call Us</h4><p><a href="tel:+94779779261">077 977 9261</a><br><a href="tel:+94719006667">071 900 6667</a></p></div></div>
+        <div class="contact-row"><div class="contact-icon">◷</div><div><h4>Enquiries</h4><p>Please call us to confirm office hours, service availability and required documents.</p></div></div>
+        <div class="contact-actions">
+          <a class="btn" href="tel:+94779779261">Call Now ↗</a>
+          <a class="btn btn-outline btn-outline-dark" href="https://wa.me/94779779261" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <iframe class="map" title="Map showing Jesmien Travel Agency in Vavuniya" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=No.%2095%2C%20Horawupothana%20Road%2C%20Vavuniya%2C%20Sri%20Lanka&z=16&output=embed"></iframe>
+    </div>
+    <div class="share-area"><button class="btn share" onclick="shareBusiness()">SHARE BUSINESS&nbsp; ↗</button></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> <strong>JESMIEN TRAVEL AGENCY</strong>. ALL RIGHTS RESERVED.</p>
+    <p class="footer-sub">Your Journey. Our Expertise. · Vavuniya, Sri Lanka</p>
+  </div>
+</footer>
+<a class="whatsapp" href="https://wa.me/94779779261" target="_blank" rel="noopener" aria-label="Contact Jesmien Travel Agency on WhatsApp">☏</a>
+<script>
+function toggleMenu(){document.getElementById('nav').classList.toggle('open')}
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+function shareBusiness(){
+ const details={title:'Jesmien Travel Agency',text:'Jesmien Travel Agency, No. 95, 1st Floor, Horawupothana Road, Vavuniya. Call 077 977 9261 or 071 900 6667.'};
+ if(navigator.share){navigator.share(details).catch(()=>{});}
+ else if(navigator.clipboard){navigator.clipboard.writeText(details.text).then(()=>alert('Business details copied.')).catch(()=>alert(details.text));}
+ else{alert(details.text);}
+}
+</script>
+</body>
+</html>
